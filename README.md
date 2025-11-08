@@ -4,3 +4,19 @@
 • 	Погоду
 • 	Топ-3 достопримечательности
 • 	Карту города
+travel_planner/
+├── app/
+│   ├── __init__.py              # Инициализация Flask-приложения
+│   ├── routes.py                # Основные маршруты
+│   ├── services/
+│   │   ├── weather.py           # Получение погоды через OpenWeatherMap API
+│   │   └── places.py            # (опционально) Достопримечательности
+│   └── templates/
+│       └── index.html           # HTML-шаблон
+├── static/
+│   └── style.css                # Стили
+├── Dockerfile                   # Docker-образ
+├── requirements.txt             # Зависимости Python
+├── .gitignore                   # Исключения Git
+├── README.md                    # Документация проекта
+└── run.py                       # Точка входа
